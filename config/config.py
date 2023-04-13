@@ -8,6 +8,6 @@ class Config():
         self.cfg = ConfigParser()
         self.cfg.read(path) # извлекаются данные из .ini файла
     def ConfigTelegram(self):
-        return self.cfg['API_KEY']
+        return self.cfg['API']['TOKEN']
 
 cfg = Config(CONFIG_DIR + '\config.ini')
